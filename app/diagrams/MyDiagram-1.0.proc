@@ -153,6 +153,9 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_BrmzyxIoEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_W_bvABIuEe-vXcKCkW0G3w" name="oportunidadeVenda" dataType="_YXDN7hIkEe-Pf_rYtAtQkg" className="pt.sie.procedimento.venda.model.OportunidadeVenda">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_W_bvARIuEe-vXcKCkW0G3w" name="init_oportunidadeVenda()" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="pt.sie.procedimento.venda.model.OportunidadeVenda"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_YXDNzhIkEe-Pf_rYtAtQkg">
         <targetForm xmi:type="expression:Expression" xmi:id="_YXDNzxIkEe-Pf_rYtAtQkg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>

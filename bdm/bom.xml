@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
+    <businessObjects>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.Administracao">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.Cliente">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="nif" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.GestorOV">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.GestorUnidadeNegocio">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.OportunidadeVenda">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="pt.sie.procedimento.venda.model.Cliente" fetchType="LAZY" name="cliente" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="pt.sie.procedimento.venda.model.GestorOV" fetchType="LAZY" name="gestorOV" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="pt.sie.procedimento.venda.model.UnidadeNegocio">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
