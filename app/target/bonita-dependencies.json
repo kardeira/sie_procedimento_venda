@@ -1,8 +1,32 @@
 {
   "connectorImplementations" : [ ],
-  "filterImplementations" : [ ],
+  "filterImplementations" : [ {
+    "type" : "ACTOR_FILTER",
+    "className" : "org.bonitasoft.actorfilter.initiator.ProcessInitiatorUserFilter",
+    "implementationId" : "bonita-actorfilter-initiator-impl",
+    "implementationVersion" : "1.0.0",
+    "definitionId" : "bonita-actorfilter-initiator",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator",
+      "version" : "1.0.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator.impl"
+  } ],
   "connectorDefinitions" : [ ],
-  "filterDefinitions" : [ ],
+  "filterDefinitions" : [ {
+    "definitionId" : "bonita-actorfilter-initiator",
+    "definitionVersion" : "1.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.actorfilter",
+      "artifactId" : "bonita-actorfilter-initiator",
+      "version" : "1.0.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
+    },
+    "jarEntry" : "bonita-actorfilter-initiator.def"
+  } ],
   "restApiExtensions" : [ ],
   "pages" : [ ],
   "forms" : [ ],
