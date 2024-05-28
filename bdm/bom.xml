@@ -4,7 +4,7 @@
         <businessObject qualifiedName="pt.sie.procedimento.venda.model.Cliente">
             <fields>
                 <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
-                <field type="INTEGER" length="255" name="nif" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="nif" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
