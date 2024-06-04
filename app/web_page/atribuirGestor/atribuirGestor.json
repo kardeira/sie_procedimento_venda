@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "8f62ac3f-4de9-44f6-a4ee-33bc83305b9d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1716932100440,
+  "lastUpdate" : 1717534973187,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -229,8 +229,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!oportunidadeVenda.nome"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -251,6 +251,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "b6ef1cec-9c20-41aa-97e5-55745709d891",
@@ -278,8 +290,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!oportunidadeVenda.nifCliente"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -300,6 +312,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "bb10692c-d1bc-45d8-9c76-4f139929ca34",
@@ -398,8 +422,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!oportunidadeVenda.unidadeNegocio"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -663,7 +687,14 @@
     "users" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id=202"
+        "../API/identity/user?p=0&c=100&f=group_id={{groupId[0].id}}"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100&f=name=gestores_ov"
       ],
       "exposed" : false
     }
