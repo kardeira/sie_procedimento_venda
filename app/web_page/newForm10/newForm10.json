@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "5b143298-cf63-4066-a5dc-6e79f317e833",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1717536418008,
+  "lastUpdate" : 1717536957700,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -99,6 +99,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "87caa5a4-5f31-46f2-8749-2078e681aa02",
@@ -374,7 +386,7 @@
                         },
                         "availableValues" : {
                           "type" : "expression",
-                          "value" : "cliente"
+                          "value" : "usersAvailable"
                         },
                         "displayedKey" : {
                           "type" : "expression"
@@ -627,11 +639,9 @@
       "exposed" : false
     },
     "usersAvailable" : {
-      "type" : "expression",
+      "type" : "url",
       "value" : [
-        "console.log(\"lala: \", $data.cliente[0])",
-        "",
-        "return \"hello\";"
+        "../API/identity/user?p=0&c=100"
       ],
       "exposed" : false
     }

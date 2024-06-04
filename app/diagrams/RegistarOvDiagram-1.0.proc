@@ -38,7 +38,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_RIM6FxInEe-vXcKCkW0G3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_RIM6FhInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_1cekehInEe-vXcKCkW0G3w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_KIFIsCKuEe-mr_7sNB6ZsA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_BRqIUCKzEe-mr_7sNB6ZsA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_1cekeRInEe-vXcKCkW0G3w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_1cekfBInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -146,7 +146,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_NbIydxInEe-vXcKCkW0G3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_NbIydhInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ED-x5iKmEe-mr_7sNB6ZsA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_lj36ACKvEe-mr_7sNB6ZsA" name="newForm10" content="5b143298-cf63-4066-a5dc-6e79f317e833" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_BRqIUSKzEe-mr_7sNB6ZsA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ED-x5SKmEe-mr_7sNB6ZsA">
             <inputs xmi:type="process:ContractInput" xmi:id="_jWuF8CKvEe-mr_7sNB6ZsA" name="clienteInput" type="COMPLEX" dataReference="cliente" createMode="false">
@@ -171,17 +171,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_YZ1UoRInEe-vXcKCkW0G3w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_YZ1UoBInEe-vXcKCkW0G3w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_YZ1UohInEe-vXcKCkW0G3w" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_jOWKIh0qEe-Sl-s3EpFGXQ">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_jOWKIx0qEe-Sl-s3EpFGXQ" name="oportunidadeVenda" content="oportunidadeVenda" type="TYPE_VARIABLE" returnType="pt.sie.procedimento.venda.model.OportunidadeVenda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jOWKJB0qEe-Sl-s3EpFGXQ" name="oportunidadeVenda" dataType="_YXDN7hIkEe-Pf_rYtAtQkg" className="pt.sie.procedimento.venda.model.OportunidadeVenda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_jOWKJR0qEe-Sl-s3EpFGXQ" name="oportunidadeVendaInput.idGestorOV" content="oportunidadeVendaInput?.idGestorOV" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_jOWKJh0qEe-Sl-s3EpFGXQ" name="oportunidadeVendaInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_jOWKJx0qEe-Sl-s3EpFGXQ" type="JAVA_METHOD" expression="setIdGestorOV">
-              <inputTypes>java.lang.Integer</inputTypes>
-            </operator>
-          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_YZ1UoxInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_YZ1UpBInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_YZ1UpRInEe-vXcKCkW0G3w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
