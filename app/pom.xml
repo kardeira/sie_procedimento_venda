@@ -92,6 +92,21 @@
       <artifactId>bonita-actorfilter-initiator</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-document-converter</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-document-templating</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-email</artifactId>
+      <version>1.4.1</version>
+    </dependency>
     
   </dependencies>
   <build>

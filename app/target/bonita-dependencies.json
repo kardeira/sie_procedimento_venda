@@ -1,5 +1,47 @@
 {
-  "connectorImplementations" : [ ],
+  "connectorImplementations" : [ {
+    "type" : "CONNECTOR",
+    "className" : "org.bonitasoft.connectors.document.converter.DocumentConverterConnector",
+    "implementationId" : "document-converter-impl",
+    "implementationVersion" : "2.3.0",
+    "definitionId" : "document-converter",
+    "definitionVersion" : "1.0.2",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-document-converter",
+      "version" : "2.3.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-document-converter\\2.3.0\\bonita-connector-document-converter-2.3.0.jar"
+    },
+    "jarEntry" : "document-converter.impl"
+  }, {
+    "type" : "CONNECTOR",
+    "className" : "org.bonitasoft.connectors.document.templating.DocumentTemplating",
+    "implementationId" : "document-templating-impl",
+    "implementationVersion" : "2.3.0",
+    "definitionId" : "document-templating",
+    "definitionVersion" : "1.0.1",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-document-templating",
+      "version" : "2.3.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-document-templating\\2.3.0\\bonita-connector-document-templating-2.3.0.jar"
+    },
+    "jarEntry" : "document-templating.impl"
+  }, {
+    "type" : "CONNECTOR",
+    "className" : "org.bonitasoft.connectors.email.EmailConnector",
+    "implementationId" : "email-impl",
+    "implementationVersion" : "1.4.1",
+    "definitionId" : "email",
+    "definitionVersion" : "1.2.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-email",
+      "version" : "1.4.1",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.4.1\\bonita-connector-email-1.4.1.jar"
+    },
+    "jarEntry" : "email.impl"
+  } ],
   "filterImplementations" : [ {
     "type" : "ACTOR_FILTER",
     "className" : "org.bonitasoft.actorfilter.initiator.ProcessInitiatorUserFilter",
@@ -15,7 +57,37 @@
     },
     "jarEntry" : "bonita-actorfilter-initiator.impl"
   } ],
-  "connectorDefinitions" : [ ],
+  "connectorDefinitions" : [ {
+    "definitionId" : "document-converter",
+    "definitionVersion" : "1.0.2",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-document-converter",
+      "version" : "2.3.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-document-converter\\2.3.0\\bonita-connector-document-converter-2.3.0.jar"
+    },
+    "jarEntry" : "document-converter.def"
+  }, {
+    "definitionId" : "document-templating",
+    "definitionVersion" : "1.0.1",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-document-templating",
+      "version" : "2.3.0",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-document-templating\\2.3.0\\bonita-connector-document-templating-2.3.0.jar"
+    },
+    "jarEntry" : "document-templating.def"
+  }, {
+    "definitionId" : "email",
+    "definitionVersion" : "1.2.0",
+    "artifact" : {
+      "groupId" : "org.bonitasoft.connectors",
+      "artifactId" : "bonita-connector-email",
+      "version" : "1.4.1",
+      "file" : "C:\\Users\\aasca\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.4.1\\bonita-connector-email-1.4.1.jar"
+    },
+    "jarEntry" : "email.def"
+  } ],
   "filterDefinitions" : [ {
     "definitionId" : "bonita-actorfilter-initiator",
     "definitionVersion" : "1.0",

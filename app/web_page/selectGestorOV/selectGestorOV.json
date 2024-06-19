@@ -1,10 +1,10 @@
 {
-  "id" : "newForm11",
-  "name" : "newForm11",
+  "id" : "selectGestorOV",
+  "name" : "selectGestorOV",
   "type" : "form",
   "uuid" : "a8aabff3-296e-48b6-802b-5864b800532a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1717537649410,
+  "lastUpdate" : 1718828459565,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -229,7 +229,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nome"
+                          "value" : "Nome cliente"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -242,6 +242,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "b5709c9b-e7a5-425b-8a8e-a92c0a5e1e1e",
@@ -278,7 +290,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nif"
+                          "value" : "Nif cliente"
                         },
                         "text" : {
                           "type" : "interpolation",
@@ -291,6 +303,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "9597948a-3049-44ec-9a62-e502b07e8a09",
@@ -309,58 +333,65 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "labelWidth" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id Gestor O V"
+                          "value" : "Gestor OV"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "interpolation"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "users"
                         },
-                        "dimension" : {
+                        "displayedKey" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "firstname + \" \" + lastname"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "id"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "cliente.idGestorOV"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "71fa08f7-bcb8-4c49-8e9c-440648a68318",
+                      "reference" : "863a7505-5c2f-429d-934a-c23ed2ed3ccd",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -559,6 +590,27 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "users" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=100&f=group_id=410"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100&f=name=gestores_ov"
+      ],
+      "exposed" : false
+    },
+    "usersWithoutOwnOv" : {
+      "type" : "expression",
+      "value" : [
+        "console.log($data.cliente)"
       ],
       "exposed" : false
     }
