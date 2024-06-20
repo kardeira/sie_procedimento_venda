@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a8aabff3-296e-48b6-802b-5864b800532a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718828459565,
+  "lastUpdate" : 1718844980461,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -596,7 +596,7 @@
     "users" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id=410"
+        "../API/identity/user?p=0&c=100&f=group_id={{groupId[0].id}}"
       ],
       "exposed" : false
     },
