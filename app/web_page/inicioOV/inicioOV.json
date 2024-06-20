@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ed9a6bd2-a4b7-477b-9e95-374222fad30d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1717534456486,
+  "lastUpdate" : 1718921395796,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -288,48 +288,17 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
+                        "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Unidade Negocio"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.oportunidadeVendaInput.unidadeNegocio"
                         },
                         "required" : {
                           "type" : "constant",
@@ -339,33 +308,45 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "minLength" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
-                        "maxLength" : {
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Unidade Negocio"
+                        },
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : "top"
                         },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
+                        "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "unidadesNegocio"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nome"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "nome"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.oportunidadeVendaInput.unidadeNegocio"
                         }
                       },
-                      "reference" : "00610a4f-179d-4617-b8da-ad0cc1c62517",
+                      "reference" : "eaa97bfb-8d4c-466d-bbdc-bbf0e7c427f0",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -544,6 +525,13 @@
         "return {",
         "\toportunidadeVendaInput: $data.formInput.oportunidadeVendaInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "unidadesNegocio" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/pt.sie.procedimento.venda.model.UnidadeNegocio?p=0&c=100&q=find"
       ],
       "exposed" : false
     }
